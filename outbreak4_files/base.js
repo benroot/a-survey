@@ -676,9 +676,9 @@ function datediff(d1,d2,unit,dateformat,returnSigned)
 {
 	// Make sure Units are provided
 	if (unit == null) {
-		alert('CALCULATION ERRORS EXIST!\n\nThere is a syntactical error in a DATEDIFF calculation on this page. '
-			+ 'The UNIT parameter is not specified. Please edit the equation to fix this.\n\n'
-			+ 'See the Help & FAQ page for documentation on using the DATEDIFF function.');
+		// alert('CALCULATION ERRORS EXIST!\n\nThere is a syntactical error in a DATEDIFF calculation on this page. '
+		// 	+ 'The UNIT parameter is not specified. Please edit the equation to fix this.\n\n'
+		// 	+ 'See the Help & FAQ page for documentation on using the DATEDIFF function.');
 		return;
 	}
 	// Missing data codes

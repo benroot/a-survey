@@ -341,14 +341,14 @@ function ctf(t,c){
 <script type="text/javascript">
 function calculate(t,isOnPageLoad){
   var a,b,c;if(typeof t=='undefined') t='';if(typeof isOnPageLoad=='undefined') isOnPageLoad=false;
-  try{if(ctf(t,'dflag4')){c=( chkNull(document.form.mylogin.value)==4 && (document.form.disease4_1.value==2 || document.form.disease4_2.value==2 || document.form.disease4_3.value==2) ?  1 : 0);b=document.form.dflag4.value;a=document.form.dflag4.value=isNumeric(c)?c:'';calcChangeCheck(a,b,'dflag4');}}catch(e){calcErr('dflag4')}
+  try{if(ctf(t,'dflag4')){c=( chkNull(document.form.mylogin.value)==4 && (document.form.disease4_1.value==2 || document.form.disease4_2.value==2 || document.form.disease4_3.value==2) ?  1 : 0);b=document.form.dflag4.value;a=document.form.dflag4.value=isNumeric(c)?c:'';calcChangeCheck(a,b,'dflag4');}}catch(e){}
   try{updateCalcPipingReceivers()}catch(e){}
   return false;
 }
 calcErrExist = calculate('',true);
 </script>
 <script type="text/javascript">
-if(calcErrExist){calcErr2()}
+if(calcErrExist){}
 </script>
 
 <!-- Branching Logic Trigger Fields -->
@@ -370,7 +370,7 @@ function dbtf(t,c){
 function doBranching(t,b,isOnPageLoad){
   if(typeof isOnPageLoad=='undefined') isOnPageLoad=false;
   var c;if(typeof b=='undefined') b=false;if(typeof t=='undefined') t='';
-  c='error4_1';try{if(dbtf(t,c))evalLogic(c,b,(document.form.disease4_1.value!="" && chkNull(document.form.dflag4.value)==0))}catch(e){brErr(c)}
+  c='error4_1';try{if(dbtf(t,c))evalLogic(c,b,(document.form.disease4_1.value!="" && chkNull(document.form.dflag4.value)==0))}catch(e){}
   hideSectionHeaders();
   $(function(){ updateHiddenEnhancedChoices(); });
   if (!isOnPageLoad) enabledFloatingMatrixHeaders();
